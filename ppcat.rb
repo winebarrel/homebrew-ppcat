@@ -5,21 +5,21 @@
 class Ppcat < Formula
   desc "ppcat is a tool to format JSON in the middle of text."
   homepage "https://github.com/winebarrel/ppcat"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/winebarrel/ppcat/releases/download/v0.2.1/ppcat_0.2.1_darwin_amd64.tar.gz"
-      sha256 "0ac115fc87a41bc207f40fc79421063fe4c12a07ee0e4b67d881f327e636f12c"
+      url "https://github.com/winebarrel/ppcat/releases/download/v0.2.2/ppcat_0.2.2_darwin_amd64.tar.gz"
+      sha256 "7f2016dd06ef1a55e50764e71d379a04782f4b9d782da0d351efa2b7c276e2c5"
 
       def install
         bin.install 'ppcat'
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/winebarrel/ppcat/releases/download/v0.2.1/ppcat_0.2.1_darwin_arm64.tar.gz"
-      sha256 "b8bcc3ceedd59c833abaddc75ce8da25d7461dff7e407c75a99c4fbf1ec13564"
+      url "https://github.com/winebarrel/ppcat/releases/download/v0.2.2/ppcat_0.2.2_darwin_arm64.tar.gz"
+      sha256 "cde8bda295b91976802dae43945e7d1b4337756319097fd8c5f590c818cbd20f"
 
       def install
         bin.install 'ppcat'
@@ -29,16 +29,16 @@ class Ppcat < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/winebarrel/ppcat/releases/download/v0.2.1/ppcat_0.2.1_linux_arm64.tar.gz"
-      sha256 "6ec35a326f2a2b26bbfe7dd48fe9b3b54dd4bc12b348b32e2941cc69926135f5"
+      url "https://github.com/winebarrel/ppcat/releases/download/v0.2.2/ppcat_0.2.2_linux_arm64.tar.gz"
+      sha256 "af34f5a78033432bdbd07b859d57e617c70dc2f5c2e25473432a4254251482cf"
 
       def install
         bin.install 'ppcat'
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/winebarrel/ppcat/releases/download/v0.2.1/ppcat_0.2.1_linux_amd64.tar.gz"
-      sha256 "5dee8dca1ca1dc18a1ec67bbc9d92ea5fd3eccdc584764bd14130c739cd68fc6"
+      url "https://github.com/winebarrel/ppcat/releases/download/v0.2.2/ppcat_0.2.2_linux_amd64.tar.gz"
+      sha256 "8e2e02124765164c4d4d422041993775fe35830856b994dddf2f0bc99a2d5915"
 
       def install
         bin.install 'ppcat'
